@@ -5,6 +5,7 @@
      font-size: 11px;
      width: 100%;
      color: rgba(39, 35, 35, 1);
+     position: relative;
  }
 /* header*/
 ul {
@@ -49,6 +50,8 @@ ul {
  }
  footer {
      background: rgba(130, 130, 141, 0.1);
+     position: relative;
+     top: 30px;
      
  }
 article{
