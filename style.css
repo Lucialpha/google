@@ -1,7 +1,7 @@
 
 /*body*/
  body{
-    margin: 0 auto;
+    margin: 0;
      font-size: 11px;
      width: 100%;
      color: rgba(39, 35, 35, 1);
@@ -37,19 +37,17 @@ nav > div {
 }
 
 .appimg {
-    width: cal(15px + 1%);
     height: 15px;
 }
 
 main {
     text-align: center;
-     width: 90%;
-     margin: 10% auto 18% auto;
+
+     margin: 15vh auto 0 auto;
  }
  .google-image {
-     width: 30%;
-     height: 150px;
-     margin-bottom: 4%;
+     width: 500px;
+     margin-bottom: 5vh;
  }
  .button {
      display: flex;
@@ -63,16 +61,19 @@ main {
     padding: 10px;
  }
  input{
-    width: 40%;
+    width: 60%;
      height: 40px;
-     border: 1px solid rgba(130, 130, 141, 0.6);
+     border: 1px solid rgba(130, 130, 141, 0.4);
      border-radius: 20px;
      padding-left: 50px;
  }
  footer {
      background: rgba(130, 130, 141, 0.1);
+     position: fixed;
+     bottom: 0vh;
+     width: 100vw;
      
-     margin: -3% auto;
+    
 
      
  }
@@ -87,4 +88,33 @@ padding: 10px;
 text-align: center;
 }
 
+@media screen and (max-width:650px) or () {
+    .google-image{
+        width: 50vw;
+        height: 100px;
+    }
+    input {
+        width: 70vw;
+    }
+    article{
+        font-size: 0.7em;
+    }
+    
+}
 
+
+@media (max-width:950px){
+    .google-image{
+        width: 50vw;}
+}
+
+@media (max-height: 450px){
+    body{
+        position: relative;
+        overflow-x: hidden;
+    }
+    footer {
+        position: static;
+    }
+    
+}
